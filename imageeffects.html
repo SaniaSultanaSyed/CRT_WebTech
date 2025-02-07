@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                text-align: center;
+
+            }
+            .blur{
+                filter:blur(5px);
+            }
+            .blur hover{
+                filter blur(0);
+            }
+            .pulse{
+                animation:pulse 0.5s infinite alternate;
+            }
+            @keyframes pulse{
+                0%{transform:scale(1);opacity:1;}
+                100%{transform:scale(1.1);opacity:0.8;}
+
+            }
+            .shake:hover{
+                animation:shake 0.3s infinite;
+            }
+            @keyframes shake{
+                0%,100%{transform:translateX(0);}
+                25%{transform:translateX(-5px);}
+                50%{transform:translateX(5px);}
+                75%{transform:translateX(-5px);}
+            }
+            .spin:hover{
+                transform: rotate(360deg);
+            }
+            .tilt:hover{
+          transform:skewX(10deg);
+            }
+        </style>
+        </head>
+<body>
+    <h1>Awesome Image effects</h1>
+    <div class="container">
+        <div>
+            <h2>.1.Floating Effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="Floating Image"class="float">
+        </div>
+        <div>
+            <h2>2.Flip Effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="Flip Image"class="Flip">
+        </div>
+        <div>
+            <h2>3.Blur to Focus Effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="Blur Image"class="Blur">
+        </div>
+        <div>
+            <h2>4.pulsing effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="pulse image"class="pulse">
+        </div>
+        <div>
+            <h2>5.shake effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="shake image"class="shake">
+        </div>
+        <div>
+            <h2>6.spin effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="spin image"class="spin">
+        </div>
+        <div>
+            <h2>7.Skew effects</h2>
+            <img src="https://i.pinimg.com/736x/45/fa/97/45fa97088f11c4994f8b401ab787af64.jpg"alt="Tilt image"class="tilt"></i>
+        </div>
+    </div>
+</body>
+</html>
